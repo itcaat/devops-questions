@@ -13,6 +13,13 @@
 * Ты решил выпустить для своего сайта mydomain.com сертификат через letsencrypt. Какой предопочтешь способ HTTP-01 challenge или DNS-01 challenge? Чем они отличаются?
 * У тебя выпущен wildcard сертификат на *.mydomain.com. Ты его подключаешь в балансировщик и оказывается, что пользователи видят ошибку сертификата при открытии mydomain.com - почему? 
 * Объясни за что отвечает этот `proxy_next_upstream error timeout http_502 http_503 non_idempotent;` в конфигурации nginx.
+* Объясни за что отвечает этот блок в nginx и логику работы в случае ошибок
+```text
+upstream callcenter {
+    server backend01 max_fails=5 fail_timeout=30s;
+    server backend02 max_fails=5 fail_timeout=30s;
+}
+```
 
 ## performance
 
