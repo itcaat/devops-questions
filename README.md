@@ -77,4 +77,4 @@
 
 ## docker
 
-* 📂 [Dockerfile](./docker/Dockerfile) - что сделано плохо в этом Dockerfile?https://github.com/itcaat/devops-questions
+* 📂 [Dockerfile](./docker/Dockerfile) - что сделано плохо в этом Dockerfile?
