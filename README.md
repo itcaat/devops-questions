@@ -22,6 +22,12 @@
         server backend02 max_fails=5 fail_timeout=30s;
     }
     ```
+* Объясни что это за параметры
+    ```text
+    proxy_connect_timeout 30s;
+    proxy_send_timeout 30s;
+    proxy_read_timeout 120s;
+    ```
 * `curl --header "Host: mydomain.com" https://<IP-адрес_L7-балансировщика` - объясни что делает эта команда и для чего она может понадобиться.
 * Какие тулы будешь использовать чтобы воспроизвести пользовательскую нагрузку на web-приложения или web api.
 
